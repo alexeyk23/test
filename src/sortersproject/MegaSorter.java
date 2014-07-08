@@ -16,7 +16,7 @@ enum SortStrategy
 }
 public class MegaSorter {
    private ISorterStrategy strategy;
-   
+   String[] names = new String[]{"BubleSort","MergeSort","TreeSort","CountSort"};
    public void doSort(int[] a)
     {
        this.strategy.sort(a);
@@ -46,8 +46,15 @@ public class MegaSorter {
                    this.strategy= new MergeSort();
        }
     }
+
     public void setSortStrategy()
     {
         this.strategy =new MergeSort();
+    }
+    public void setSortStrategy(String name)
+    {
+        
+      setSortStrategy(SortStrategy.valueOf(name));
+
     }
 }
