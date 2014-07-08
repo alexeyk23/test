@@ -28,6 +28,7 @@ public class SortersProject {
         {
             a[i]=rnd.nextInt(100);
         }
+      
         System.out.println("Array="+Arrays.toString(a));
         MegaSorter megaSorter = new MegaSorter();
         megaSorter.setSortStrategy(SortStrategy.MergeSort);

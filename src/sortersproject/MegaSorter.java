@@ -46,4 +46,8 @@ public class MegaSorter {
                    this.strategy= new MergeSort();
        }
     }
+    public void setSortStrategy()
+    {
+        this.strategy =new MergeSort();
+    }
 }
